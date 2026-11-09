@@ -1,0 +1,95 @@
+\documentclass[12pt, %
+openright,
+oneside, %
+a4paper,    %
+brazilian]{facom-ufu-abntex2}
+
+\usepackage{graphicx}
+\graphicspath{{figuras/}{pictures/}{images/}{./}}
+
+\autor{[NOME DO AUTOR]}
+\data{[ANO]}
+\orientador{[NOME DO ORIENTADOR]}
+
+\titulo{[TÍTULO DO TRABALHO]}
+
+\hypersetup{pdfkeywords={[PALAVRA 1]}{[PALAVRA 2]}}
+
+\begin{document}
+\frenchspacing
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+\imprimircapa
+\imprimirfolhaderosto
+
+\begin{folhadeaprovacao}
+
+  \begin{center}
+    {\ABNTEXchapterfont\large\imprimirautor}
+
+    \vspace*{\fill}\vspace*{\fill}
+    {\ABNTEXchapterfont\bfseries\Large\imprimirtitulo}
+    \vspace*{\fill}
+
+    \hspace{.45\textwidth}
+    \begin{minipage}{.5\textwidth}
+        \imprimirpreambulo
+    \end{minipage}%
+    \vspace*{\fill}
+   \end{center}
+
+   Trabalho aprovado. \imprimirlocal, [dia] de [mês] de [ano]:
+
+   \assinatura{\textbf{\imprimirorientador} \\ Orientador}
+   \assinatura{\textbf{Professor}}
+   \assinatura{\textbf{Professor}}
+
+   \begin{center}
+    \vspace*{0.5cm}
+    {\large\imprimirlocal}
+    \par
+    {\large\imprimirdata}
+    \vspace*{1cm}
+  \end{center}
+
+\end{folhadeaprovacao}
+
+\begin{resumo}
+[Resumo do trabalho.]
+
+\textbf{Palavras-chave}: [palavra 1]; [palavra 2]; [palavra 3].
+\end{resumo}
+
+% ---
+% inserir lista de abreviaturas e siglas
+% ---
+\begin{siglas}
+    \item[SIGLA] [Significado]
+\end{siglas}
+
+% ---
+% inserir o sumário
+% ---
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+\input{capitulos/1-introducao}
+\input{capitulos/2-fundamentacao}
+\input{capitulos/3-trabalhos-relacionados}
+\input{capitulos/4-metodologia}
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+\bibliography{references}
+
+
+\end{document}
