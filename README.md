@@ -17,4 +17,5 @@ Skill para montar trabalhos acadêmicos em LaTeX seguindo as normas ABNT, com a 
 
 ## Licença
 
-`templates/facom-ufu-abntex2.cls` é a classe da Faculdade de Computação da UFU, baseada em `abntex2`, distribuída sob a LPPL 1.3 (ver o cabeçalho do arquivo). Não foi alterada. Os demais arquivos de `templates/` são de uso livre.
+- Skill, documentação e demais arquivos de `templates/`: MIT (ver `LICENSE`).
+- `templates/facom-ufu-abntex2.cls`: classe da Faculdade de Computação da UFU, baseada em `abntex2`, distribuída sob a LPPL 1.3 (ver o cabeçalho do arquivo). Não foi alterada.
